@@ -35,6 +35,12 @@ MONTE CARLO SIMULATION(simulation.py)
 - Computes drawdown-based probability of ruin
 - Demonstrates variance even with positive EV strategies
 
+STRATEGY(strategies.py)
+- Controls position sizing for each simulated bet
+- Supports multiple capital allocation methodologies
+- Incorporates risk-adjusted Kelly sizing
+- Allows direct comparison of strategy performance under identical conditions 
+
 DEMONSTRATION(main.py)
 - Standard sportsbook odds (-110)
 - Small informational edge (~54-55%)
