@@ -22,7 +22,6 @@ def kelly_fraction(prob_win: float, odds: int) -> float:
     if not (0 <= prob_win <= 1):
         raise ValueError("Probability must be between 0 and 1.")
     
-    implied_prob = implied_probability(odds)
     
     if odds > 0:
         b = odds / 100
