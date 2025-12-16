@@ -44,7 +44,7 @@ DEMONSTRATION(main.py)
 
 # Purpose, Limitations & Future Work
 
-PURPOSE
+PURPOSE:
 The purpose of this project is to analyze how small statistical edges trasnlate into long-term outcomes when risk, uncertainty, and bankroll constraints are properly managed. Rather than focusin on prediction accuracy, the system ephasizes capital allocation, variance, and survivability, modeling bets as financial investments under uncertainty. By using expected value analysis, risk-adjusted Kelly sizing, and Monte Carlo simulation, the project demonstrates how disciplined sizing and risk control are often more important than simply picking winners.
 
 LIMITATIONS
