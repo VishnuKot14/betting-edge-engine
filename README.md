@@ -1,11 +1,11 @@
 # Betting Edge & Risk Evaluation Engine
 
-OVERVIEW
+OVERVIEW:
 This project is a risk-aware betting analytics engine that evaluates whether a wager is favorable by combining expected value anyalsis, odds normalization, Kelly-optimal sizing, and Monte Carlo risk simulation.
 
 Rather than focusing on predicting winners, bets are treated as financial investments under uncertainty, emphasizing capital allocation, variance, and downside risk.
 
-MOTIVATION
+MOTIVATION:
 I created this project from a personal interest in sports betting and a curiosity about why most bettors lose even when they believe they have an edge. Through experience, it became clear that outcomes are often dominated not by picking winners, but by poor sizing, overconfidence, and blind-betting.
 
 I wanted to appraoch betting as a financial decision-making problem, similar to how capital is allocated in trading or investing. This project reflects my shift in perspective of focusing less on prediction accuracy and more on expected value, uncertianty, and making a long-term profit.
