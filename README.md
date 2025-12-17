@@ -13,35 +13,41 @@ I wanted to appraoch betting as a financial decision-making problem, similar to 
 
 # System Components
 
-ODDS & PRICING(odds.py)
+ODDS & PRICING (odds.py)
 - Converts American odds to decimal odds
 - Computes implied market probabilities
 - Normalizes sportsbook pricing for EV analysis
 
-EXPECTED VALUE(ev.py)
+EXPECTED VALUE (ev.py)
 - Calculates expected value using true probability estimates
 - Quantifies edge over the market
 - Separates long-term profitability from short-term variance
 
-RISK-ADJUSTED KELLY ALLOCATION(kelly.py)
+RISK-ADJUSTED KELLY ALLOCATION (kelly.py)
 - Edge-aware scaling (shrinks small edges)
 - Uncertainty-aware penalties (models estimation error)
 - Drawdown-based exposure limits
 - Risk regime classification (No/Low/Moderate/High conviction)
 
-MONTE CARLO SIMULATION(simulation.py)
+MONTE CARLO SIMULATION (simulation.py)
 - Simulates thousands of betting paths
 - Tracks bankroll evolution over time
 - Computes drawdown-based probability of ruin
 - Demonstrates variance even with positive EV strategies
 
-STRATEGY(strategies.py)
+STRATEGY (strategies.py)
 - Controls position sizing for each simulated bet
 - Supports multiple capital allocation methodologies
 - Incorporates risk-adjusted Kelly sizing
-- Allows direct comparison of strategy performance under identical conditions 
+- Allows direct comparison of strategy performance under identical conditions
 
-DEMONSTRATION(main.py)
+MACHINE LEARNING PROBABILITY MODEL (model.py)
+- Trains a probabilistic classifier to estimate win probability (prob_win_ from input features
+- Uses bootstrap resampling to estimate prediction uncertainty (prob_std)
+- Feeds (prob_win, prob_std) into risk-adjusted Kelly sizing to reflect model risk
+- Enables end-to-end evaluation of ML-driven decisionsusing Monte Carlo simulation
+
+DEMONSTRATION (main.py)
 - Standard sportsbook odds (-110)
 - Small informational edge (~54-55%)
 - Fractional Kelly sizing
