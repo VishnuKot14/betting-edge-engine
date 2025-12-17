@@ -41,12 +41,6 @@ STRATEGY (strategies.py)
 - Incorporates risk-adjusted Kelly sizing
 - Allows direct comparison of strategy performance under identical conditions
 
-MACHINE LEARNING PROBABILITY MODEL (model.py)
-- Trains a probabilistic classifier to estimate win probability (prob_win_ from input features
-- Uses bootstrap resampling to estimate prediction uncertainty (prob_std)
-- Feeds (prob_win, prob_std) into risk-adjusted Kelly sizing to reflect model risk
-- Enables end-to-end evaluation of ML-driven decisionsusing Monte Carlo simulation
-
 DEMONSTRATION (main.py)
 - Standard sportsbook odds (-110)
 - Small informational edge (~54-55%)
